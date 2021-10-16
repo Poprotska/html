@@ -1,10 +1,7 @@
 body {
     width: 1200px;
     min-height: 600px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 150px;
-    margin-left: 150px;
+    margin: 0px 150px;
     background-color: darkslategrey;
 }
 
@@ -19,12 +16,11 @@ body {
 }
 
 img {
-    border: 1px solid darkslategrey;
-    size: auto;
+    border-left: 3px solid orange;
+    box-sizing: border-box;
 }
 
 .list {
     display: flex;
+    justify-content: center;
 }
-
-ul {margin: auto}

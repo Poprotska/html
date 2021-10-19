@@ -1,7 +1,7 @@
 body {
     width: 1200px;
     min-height: 600px;
-    margin: 0px 150px;
+    margin: 0px auto;
     background-color: darkslategrey;
 }
 

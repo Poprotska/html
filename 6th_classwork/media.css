@@ -126,7 +126,7 @@
     }
 
     .selection {
-        min-height: 1100px;
+        min-height: 1200px;
     }
 
     .selection__image {
@@ -150,6 +150,11 @@
 
     .selection__item_line {
         display: none;
+    }
+
+    .selection h2 {
+        flex-direction: column;
+        text-align: center;
     }
 
 }

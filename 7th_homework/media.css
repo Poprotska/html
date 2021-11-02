@@ -1,0 +1,166 @@
+@media screen and (max-width: 400px) {
+    .header__menu {
+        display: none;
+    }
+    .header_logo img{
+        width: 50px;
+    }
+
+    .wrapper {
+        max-width: 340px;
+        padding: 0 10px;
+    }
+
+    .header_top {
+        padding-top: 20px;
+    }
+
+    .header_info {
+        border: none;
+        padding-left: 0;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+    .header_main {
+        margin-top: 250px;
+        margin-left: 0;
+    }
+
+    .header_main__title{
+        text-align: center;
+    }
+
+    .header_main__title h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .header_main__title h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .header_main__title p {
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .header_main__title p::before, .header_main__title p::after {
+        display: none;
+    }
+
+    .header_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+    }
+
+    .header_bottom {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .our_story {
+        flex-direction: column;
+        margin-top: 1000px;
+        min-height: 1000px;
+        align-items: center;
+    }
+
+    .our_story__box {
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        margin-left: 0;
+    }
+
+    .our_story__text h2 {
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .our_story__bottom {
+        flex-direction: column;
+    }
+
+    .our_story__photos {
+        margin-top: 200px;
+        width: 350px;
+    }
+
+    .our_story__photo_1 {
+        margin-left: 140px;
+        margin-top: 30px;
+        width: 20vh;
+    }
+
+    .our_story__photo_2 {
+        margin-left: 100px;
+        width: 20vh;
+    }
+
+    .our_story__photo_3 {
+        margin-top: 10px;
+        width: 20vh;
+    }
+
+    .our_story__photo_4 {
+        margin-top: 130px;
+        margin-left: 180px;
+        width: 20vh;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .ad {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ad-text {
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        margin-left: 5px;
+        margin-bottom: 25px;
+    }
+
+    .ad-text h3 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .selection {
+        min-height: 1200px;
+    }
+
+    .selection__image {
+        width: 100vw;
+    }
+
+    .selection__box {
+        padding-left: 20px;
+    }
+
+    .selection_main {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .selection__text {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .selection__item_line {
+        display: none;
+    }
+
+    .selection h2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

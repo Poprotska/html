@@ -1,0 +1,48 @@
+@media screen and (max-width: 400px) {
+    .wrapper {
+        padding: 0 10px !important;
+    }
+
+    .main__line,
+    .main__text > p {
+        display: none;
+    }
+
+    .main__image > img,
+    .main__bottom_image > img {
+        width: 100vw;
+    }
+
+    .main__text > h1 {
+        font-size: 34px !important;
+        text-align: center;
+    }
+
+    .main__bottom_text > h3 {
+        text-align: center;
+    }
+
+    .card_image {
+        width: 100vw;
+    }
+
+    .card_row {
+        flex-direction: column;
+    }
+
+    .card-body {
+
+        padding: 30px 15px !important;
+    }
+
+    .card-text {
+        font-size: 16px;
+        min-width: 350px;
+    }
+
+    .quality_cards {
+        padding: 15px;
+        max-width: 400px;
+    }
+
+}

@@ -1,0 +1,131 @@
+.wrapper {
+    padding: 0 200px;
+}
+
+.navbar {
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    border: 2px solid transparent;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #2E75FF;
+    border: 2px solid #EAEDF5;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.main__text > h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+}
+
+.main__text > p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+}
+
+.main__line {
+    margin: 50px 0;
+    width: 200px;
+    height: 7px;
+    background-color: #EDEFF3;
+}
+
+.main__bottom_text >h3 {
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2.4px;
+    color: #1652AC;
+}
+
+.main__bottom_text >p {
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    color: #45494F;
+}
+
+.card {
+    background: #003584;
+}
+
+.card-body {
+    padding: 180px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2.4px;
+    color: #FBFDFF;
+    margin-bottom: 20px;
+}
+
+.card-text{
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    color: #FBFDFF;
+}
+
+.quality_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality_box >h3 {
+    margin: 70px 0;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 4.42px;
+    color: #020303;
+}
+
+.quality_cards {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.q_img-fluid {
+    margin-left: 40px;
+}
+
+.card_quality {
+    height: 125px;
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.q_card-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.4px;
+    color: #45494F;
+}
+

@@ -1,0 +1,136 @@
+.wrapper {
+    padding: 0 50px;
+}
+
+.navbar-dark, .navbar-toggler {
+    background-color: #0F2438;
+    border: none;
+}
+
+.nav-link,
+.navbar-dark,
+.navbar-nav,
+.nav-link a,
+.nav-link:hover,
+.navbar-brand > button {
+    color: white !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.navbar-brand > button:hover {
+    text-decoration: underline white;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    column-gap: 7px;
+}
+
+.collapse {
+    justify-content: space-between;
+}
+
+.navbar-brand > button,
+.navbar-brand > p {
+    margin: 0;
+}
+
+.header {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.header_main {
+    margin: 20px 200px;
+}
+
+.header_main_box {
+}
+
+.header_main__item {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.logo_text {
+    align-items: center;
+}
+
+.logo_text > h1 {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #0F2438;
+}
+
+.logo_text > p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0F2438;
+}
+
+.working_hours_text {
+    padding-top: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 8px;
+    text-align: right;
+    color: #0F2438;
+}
+
+.location > p {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F2438;
+}
+
+.whatsapp {
+    background-color: #E1EFD0;
+    border-radius: 2px;
+    height: 30px;
+    width: 200px;
+}
+
+.whatsapp  > p {
+    padding-top: 17px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #000000;
+}
+
+.book_a_call {
+    flex-direction: column;
+    text-align: right;
+    align-items: self-end;
+}
+
+.book_a_call > p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #0F2438;
+    margin-bottom: -10px;
+}
+
+.book_a_call > button {
+    font-size: 12px;
+    text-decoration-line: underline;
+    color: #0F2438;
+}
+
+.button_call {
+    margin-bottom: 20px;
+}

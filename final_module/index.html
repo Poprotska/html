@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="media.css">
     <title>Интернет-магазин запчастей</title>
 </head>
+
 <body>
 <div class="header">
     <div class="header_top">
@@ -85,7 +86,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <input class="form-control" list="datalistOptions" id="exampleDataList1" placeholder="Ваш город">
+                    <input class="form-control" list="datalistOptions" id="exampleDataList1" placeholder="Ваш город" aria-label="City">
                     <datalist id="datalistOptions">
                         <option value="Москва">
                         <option value="Санкт-Петербург">
@@ -168,7 +169,7 @@
                 <p>Каталог</p>
             </button>
             <div class="header_bottom_left__form input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Поиск по наименованию или артикулу" aria-describedby="button-addon2">
+                    <input type="text" class="form-control" placeholder="Поиск по наименованию или артикулу" aria-describedby="button-addon2" aria-label="Search">
                     <button class="btn btn-primary header_bottom_left__button_2" type="button" id="button-addon2">Найти</button>
             </div>
         </div>
@@ -197,10 +198,10 @@
     <div class="main_box d-flex">
         <div class="ad">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="carousel-indicators ad_indicators">
+                    <button type="button" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="image/Ellipse%203.png" alt="button"></button>
+                    <button type="button" data-bs-slide-to="1" aria-label="Slide 2"><img src="image/Ellipse%205.png" alt="button"></button>
+                    <button type="button" data-bs-slide-to="2" aria-label="Slide 3"><img src="image/Ellipse%204.png" alt="button"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -256,60 +257,477 @@
 
         <div class="discount">
 
-            <div class="card mb-3 discount_box">
+            <div class="card discount_box">
+                <h4>Акция</h4>
                 <div class="row discount_card g-0">
-                    <h4>Акция</h4>
-                    <div class="col-md-4 discount_card_left">
+                    <div class="col-md-3 discount_card_right">
                         <img src="image/discount(1).png" class="img-fluid rounded-start" alt="BW-SP-2">
                     </div>
-                    <div class="col-md-8 discount_card_left">
+                    <div class="col-md-9 discount_card_left">
                         <div class="card-body discount_card_left_body">
                             <h5 class="card-title">Обгонная муфта гидротрансформатор</h5>
                             <p class="card-text">BW-SP-2 SONNAX</p>
                         </div>
+                        <div class="discount_price_box">
+                            <div class="discount_price d-flex">
+                                <h6>4 430₽</h6>
+                                <p>5 430₽</p>
+                            </div>
+                            <button class="btn btn-primary cart_button" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <img src="image/cart_white.png" alt="cart">
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="discount_price_box">
-                    <div class="discount_price d-flex">
-                        <h6>4 430₽</h6>
-                        <p>5 430₽</p>
-                    </div>
-                    <button class="btn btn-primary cart_button" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                        <img src="image/cart_white.png" alt="cart">
-                    </button>
                 </div>
             </div>
-
-            <div class="card mb-3 discount_box">
+            <div class="card discount_box">
+                <h4>Акция</h4>
                 <div class="row discount_card g-0">
-                    <h4>Акция</h4>
-                    <div class="col-md-4 discount_card_left">
+                    <div class="col-md-3 discount_card_left">
                         <img src="image/discount(2).png" class="img-fluid rounded-start" alt="BW-SP-2">
                     </div>
-                    <div class="col-md-8 discount_card_left">
+                    <div class="col-md-9 discount_card_left">
                         <div class="card-body discount_card_left_body">
                             <h5 class="card-title">Комплект фрикционных дисков</h5>
                             <p class="card-text">BW-SP-2 SONNAX</p>
                         </div>
+                        <div class="discount_price_box">
+                            <div class="discount_price d-flex">
+                                <h6>4 430₽</h6>
+                                <p>5 430₽</p>
+                            </div>
+                            <button class="btn btn-primary cart_button" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <img src="image/cart_white.png" alt="cart">
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="discount_price_box">
-                    <div class="discount_price d-flex">
-                        <h6>4 430₽</h6>
-                        <p>5 430₽</p>
-                    </div>
-                    <button class="btn btn-primary cart_button" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                        <img src="image/cart_white.png" alt="cart">
-                    </button>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="main_box__bottom"></div>
+
+    <div class="main_bottom">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active main_box__bottom d-flex">
+
+                    <div class="main_box__bottom_item">
+                        <div class="main_box__bottom_item_left">
+                            <h4>Масла</h4>
+                            <p>Трансмиссионное масло; присалка в масло акпп</p>
+                            <button type="button" class="btn btn-primary">Перейти</button>
+                        </div>
+                        <img src="image/avt-zap_main_page_v01_1.png" class="d-block" alt="avt-zap">
+                    </div>
+
+                    <div class="main_box__bottom_item">
+                        <div class="main_box__bottom_item_left">
+                            <h4>Фильтры</h4>
+                            <p>Масляный фильтр; фильтр воздушный</p>
+                            <button type="button" class="btn btn-primary">Перейти</button>
+                        </div>
+                        <img src="image/avt-zap_main_page_v01_2.png" class="d-block" alt="avt-zap">
+                    </div>
+
+                    <div class="main_box__bottom_item">
+                        <div class="main_box__bottom_item_left">
+                            <h4>Радиаторы</h4>
+                            <p>Дополнительные радиаторы</p>
+                            <button type="button" class="btn btn-primary">Перейти</button>
+                        </div>
+                        <img src="image/avt-zap_main_page_v0134.png" class="d-block" alt="avt-zap">
+                    </div>
+                </div>
+            </div>
+                <button class="carousel-control-prev main_box__bottom_button" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="ad_button_previous" aria-hidden="true">
+                            <img src="image/left.png" alt="left">
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next main_box__bottom_button" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="ad_button_next" aria-hidden="true">
+                        <img src="image/right.png" alt="next">
+                    </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </div>
 </div>
+
+<div class="catalogue wrapper">
+    <div class="catalogue_top d-flex">
+        <button type="button" class="btn btn-primary">Подборки товаров</button>
+        <button type="button" class="btn btn-outline-primary">Акции</button>
+        <button type="button" class="btn btn-outline-primary">Сейчас покупают</button>
+    </div>
+
+    <div class="catalogue_main">
+        <div class="row row-cols-md-4  row-cols-2  g-4">
+            <div class="col">
+                <div class="card catalogue_card h-100">
+                    <img src="image/Mask%20Group.png" class="card-img-top" alt="avt-zap">
+                    <div class="catalogue_header">
+                        <img src="image/Star%202.png" alt="star">
+                        <h6>4.5</h6>
+                        <p>10 отзывов</p>
+                    </div>
+                    <div class="card-body catalogue_body">
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <div class="catalogue_price_tag">
+                            <p class="card-text">ЦЕНА</p>
+                            <a href="#">по запросу</a></div>
+                    </div>
+                    <div class="catalogue_button">
+                        <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <img src="image/cart_white.png" alt="cart">В корзину
+                        </button>
+                        <img src="image/heart-shape-outline%202.png" alt="favorite">
+                        <img src="image/market-fluctuation%201.png" alt="market">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 catalogue_card">
+                    <span class="badge bg-warning">-40%</span>
+                    <img src="image/Mask%20Group%20(1).png" class="card-img-top" alt="avt-zap">
+                    <div class="catalogue_header">
+                        <img src="image/Star%202.png" alt="star">
+                        <h6>4.5</h6>
+                        <p>10 отзывов</p>
+                    </div>
+                    <div class="card-body catalogue_body">
+                        <h5 class="card-title">Комплект фрикционных дисков</h5>
+                        <div class="catalogue_price">
+                            <h6>4 430₽</h6>
+                            <p>5 430₽</p>
+                        </div>
+                        <div class="catalogue_button">
+                        <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <img src="image/cart_white.png" alt="cart">В корзину
+                        </button>
+                        <img src="image/heart-shape-outline%202.png" alt="favorite">
+                        <img src="image/market-fluctuation%201.png" alt="market">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="catalogue_card card h-100">
+                    <img src="image/Mask%20Group.png" class="card-img-top" alt="avt-zap">
+                    <div class="catalogue_header">
+                        <img src="image/Star%202.png" alt="star">
+                        <h6>4.5</h6>
+                        <p>10 отзывов</p>
+                    </div>
+                    <div class="card-body catalogue_body">
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <div class="catalogue_price_tag">
+                            <p class="card-text">ЦЕНА</p>
+                            <a href="#">по запросу</a></div>
+                    </div>
+                    <div class="catalogue_button">
+                        <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <img src="image/cart_white.png" alt="cart">В корзину
+                        </button>
+                        <img src="image/heart-shape-outline%202.png" alt="favorite">
+                        <img src="image/market-fluctuation%201.png" alt="market">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="catalogue_card card h-100">
+                    <img src="image/Mask%20Group%20(2).png" class="card-img-top" alt="avt-zap">
+                    <div class="catalogue_header">
+                        <img src="image/Star%202.png" alt="star">
+                        <h6>4.5</h6>
+                        <p>10 отзывов</p>
+                    </div>
+                    <div class="card-body catalogue_body">
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <div class="catalogue_price_tag">
+                            <p class="card-text">ЦЕНА</p>
+                            <a href="#">по запросу</a>
+                        </div>
+                    </div>
+                    <div class="catalogue_button">
+                        <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <img src="image/cart_white.png" alt="cart">В корзину
+                        </button>
+                        <img src="image/heart-shape-outline%202.png" alt="favorite">
+                        <img src="image/market-fluctuation%201.png" alt="market">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card catalogue_card h-100">
+                    <img src="image/Mask%20Group.png" class="card-img-top" alt="avt-zap">
+                    <div class="catalogue_header">
+                        <img src="image/Star%202.png" alt="star">
+                        <h6>4.5</h6>
+                        <p>10 отзывов</p>
+                    </div>
+                    <div class="card-body catalogue_body">
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <div class="catalogue_price_tag">
+                            <p class="card-text">ЦЕНА</p>
+                            <a href="#">по запросу</a></div>
+                    </div>
+                    <div class="catalogue_button">
+                        <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <img src="image/cart_white.png" alt="cart">В корзину
+                        </button>
+                        <img src="image/heart-shape-outline%202.png" alt="favorite">
+                        <img src="image/market-fluctuation%201.png" alt="market">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 catalogue_card">
+                    <span class="badge bg-warning">-40%</span>
+                    <img src="image/Mask%20Group%20(1).png" class="card-img-top" alt="avt-zap">
+                    <div class="catalogue_header">
+                        <img src="image/Star%202.png" alt="star">
+                        <h6>4.5</h6>
+                        <p>10 отзывов</p>
+                    </div>
+                    <div class="card-body catalogue_body">
+                        <h5 class="card-title">Комплект фрикционных дисков</h5>
+                        <div class="catalogue_price">
+                            <h6>4 430₽</h6>
+                            <p>5 430₽</p>
+                        </div>
+                        <div class="catalogue_button">
+                            <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <img src="image/cart_white.png" alt="cart">В корзину
+                            </button>
+                            <img src="image/heart-shape-outline%202.png" alt="favorite">
+                            <img src="image/market-fluctuation%201.png" alt="market">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="catalogue_card card h-100">
+                    <img src="image/Mask%20Group.png" class="card-img-top" alt="avt-zap">
+                    <div class="catalogue_header">
+                        <img src="image/Star%202.png" alt="star">
+                        <h6>4.5</h6>
+                        <p>10 отзывов</p>
+                    </div>
+                    <div class="card-body catalogue_body">
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <div class="catalogue_price_tag">
+                            <p class="card-text">ЦЕНА</p>
+                            <a href="#">по запросу</a></div>
+                    </div>
+                    <div class="catalogue_button">
+                        <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <img src="image/cart_white.png" alt="cart">В корзину
+                        </button>
+                        <img src="image/heart-shape-outline%202.png" alt="favorite">
+                        <img src="image/market-fluctuation%201.png" alt="market">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="catalogue_card card h-100">
+                    <img src="image/Mask%20Group%20(2).png" class="card-img-top" alt="avt-zap">
+                    <div class="catalogue_header">
+                        <img src="image/Star%202.png" alt="star">
+                        <h6>4.5</h6>
+                        <p>10 отзывов</p>
+                    </div>
+                    <div class="card-body catalogue_body">
+                        <h5 class="card-title">Intermediate accumelator sleeve</h5>
+                        <div class="catalogue_price_tag">
+                            <p class="card-text">ЦЕНА</p>
+                            <a href="#">по запросу</a>
+                        </div>
+                    </div>
+                    <div class="catalogue_button">
+                        <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <img src="image/cart_white.png" alt="cart">В корзину
+                        </button>
+                        <img src="image/heart-shape-outline%202.png" alt="favorite">
+                        <img src="image/market-fluctuation%201.png" alt="market">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalogue_bottom">
+        <button type="button" class="btn btn-outline-primary">Показать еще</button>
+    </div>
+</div>
+
+<div class="news">
+    <div class="news_header wrapper">НОВОСТИ</div>
+    <div class="divider"></div>
+    <div class="news_main wrapper">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100 preview_card">
+                    <div class="card-body preview">
+                        <h5 class="card-title">3 ноября</h5>
+                        <a href="#">Изменения на сайте</a>
+                        <p class="card-text">Недавно на сайте мы ввели
+                            очередную порцию изменений,
+                            которые, как нам кажется, должны
+                            улучшить функциональность сайта
+                            и сделать его более удобным для
+                            пользователей. Реакция посетителей
+                            не заставила себя долго ждать...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 preview_card">
+                    <div class="card-body preview">
+                        <h5 class="card-title">2 ноября</h5>
+                        <a href="#">Вышла новая версия для
+                            мобильных приложений</a>
+                        <div class="preview_text">
+                            <p>Что нового в 2.0:</p>
+                            <p>— добавлена история поиска;</p>
+                            <p>— добавлена синхронизация с сервером;</p>
+                            <p>— испрвление ошибок.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 preview_card">
+                    <div class="card-body preview">
+                        <h5 class="card-title">1 ноября</h5>
+                        <a href="#">Очередная порция обновлений для
+                            мобильных приложений</a>
+                        <div class="preview_text">
+                            <p>Что нового добавлено:</p>
+                            <p>— поддержка пуш-уведомлений;</p>
+                            <p>— разделы для покупателей;</p>
+                            <p>— просмотр покупателя в заказах;.</p>
+                            <p>— возможность поиска;</p>
+                            <p>— исправление ошибок.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 preview_card">
+                    <div class="card-body preview">
+                        <h5 class="card-title">31 октября</h5>
+                        <a href="#">Интерфейс заказов для покупателей
+                            стал более функциональным</a>
+                        <p class="card-text">Он позволяет выводить все
+                            формируемые системой
+                            уведомления(e-mail, смс, web) в
+                            едином окне с системой удобной
+                            фильтрации поиска.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="foot">
+    <div class="foot_wrap wrapper">
+        <div class="foot_box d-flex row">
+            <div class="foot__left col-12 col-md-7">
+                <div class="foot__row row row-cols-1 row-cols-md-3 g-3">
+                    <div class="foot_col col">
+                        <h4>КАТАЛОГ</h4>
+                        <p>Каталог запчастей</p>
+                        <p>Масла</p>
+                        <p>Фильтра</p>
+                        <p>Радиаторы</p>
+                        <p>Sonnax</p>
+                        <p>Manual</p>
+                        <p>Новинки</p>
+                        <p>Акции</p>
+                    </div>
+                    <div class="foot_col col">
+                        <h4>РУБРИКАТОР</h4>
+                        <p>Доставка</p>
+                        <p>Оплата</p>
+                        <p>Гарантия</p>
+                        <p>Новости</p>
+                        <p>Журнал</p>
+                        <p>О магазине</p>
+                        <p>Контактная информация</p>
+                    </div>
+                    <div class="foot_col col">
+                        <h4>ИНФОРМАЦИЯ</h4>
+                        <p>Пользовательское соглашение
+                            об использовании персональных данных</p>
+                        <p>Политика конфиденциальности</p>
+                        <p>Соглашение на рассылку
+                            рекламных материалов</p>
+                        <p>Политика возвратов</p>
+                        <p class="payment">Мы принимаем</p>
+                        <img src="image/visa_mastercard.png" alt="visa">
+                    </div>
+                </div>
+            </div>
+            <div class="foot__right col-12 col-md-4">
+                <div class="foot__right_row">
+                    <div class="foot__right_col">
+                        <h4>КОНТАКТЫ</h4>
+                        <p>+7 383 291 92 86</p>
+                        <p>info@avt-zap.ru</p>
+                    </div>
+                    <div class="foot__right_col">
+                        <h4>АДРЕС</h4>
+                        <p>г. Новосибирск, </p>
+                        <p>ул. Планировочная, 5, офис 105</p>
+                    </div>
+                </div>
+                <div class="foot__right_line d-flex">
+                    <p>Мы онлайн, воспользуйтесь</p>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@mdo">Форма обратной связи
+                    </button>
+                </div>
+                <div class="foot__right_form">
+                    <p>Подпишитесь на нашу расслыку и </p>
+                    <p>вы первыми узнаете о скидках и акциях</p>
+                    <div class="input-group email_form">
+                        <input type="text" class="form-control" placeholder="Введите ваш email"
+                               aria-describedby="button-addon2" aria-label="Email">
+                        <button class="btn btn-primary header_bottom_left__button_2" type="button" id="button-add">
+                            Подписаться
+                        </button>
+                    </div>
+                </div>
+                <div class="socials">
+                    <img src="image/facebook%201.png" alt="facebook">
+                    <img src="image/telegram%201.png" alt="telegram">
+                    <img src="image/twitter%201.png" alt="twitter">
+                    <img src="image/google-plus%201.png" alt="google">
+                </div>
+            </div>
+        </div>
+        <div class="foot__bottom">
+            2017 © ООО «АВТ-ЗАП» - запчасти для акпп
+        </div>
+    </div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

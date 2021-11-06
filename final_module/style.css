@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 0 50px;
+    margin: 0 150px;
 }
 
 .navbar-dark, .navbar-toggler {
@@ -47,10 +47,11 @@
 }
 
 .header_main {
-    margin: 20px 200px;
+    max-height: 120px;
 }
 
 .header_main_box {
+    margin: 20px 0;
 }
 
 .header_main__item {
@@ -75,7 +76,7 @@
 .logo_text > p {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1px;
     color: #0F2438;
 }
 
@@ -115,7 +116,6 @@
 .book_a_call {
     flex-direction: column;
     text-align: right;
-    align-items: self-end;
 }
 
 .book_a_call > p {
@@ -125,12 +125,262 @@
     margin-bottom: -10px;
 }
 
+.modal-content {
+    border-radius: 10px;
+}
+
 .book_a_call > button {
     font-size: 12px;
     text-decoration-line: underline;
     color: #0F2438;
+    padding-right: 0;
 }
 
 .button_call {
+    margin: 0 15px 20px;
+    background-color: #005BB9;
+    border-radius: 6px;
+}
+
+.modal-title {
+    font-size: 18px;
+    line-height: 21px;
+    color: #0F2438;
+}
+
+.col-form-label,
+.form-label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AEB5D5;
+}
+
+.header_bottom {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_bottom_left {
+    column-gap: 30px;
+}
+
+.header_bottom_left__form {
+    width: 550px;
+    }
+
+.header_bottom_left__form > input {
+    background: #F4F5FA;
+    border: transparent;
+}
+
+.header_bottom_left__button  {
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    height: 50px;
+}
+
+.btn {
+    border: transparent;
+}
+
+.btn-primary {
+    background: #005BB9;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.header_bottom_left__button_2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2px;
+    color: #FFFFFF;
+    padding: 20px;
+    background: #005BB9;
+    height: 50px;
+    border-radius: 0 6px 6px 0;
+}
+
+.header_bottom_left__button > p {
+    margin: 0 10px;
+}
+
+.header_bottom_right {
+    column-gap: 25px;
+}
+
+.header_bottom_right__item {
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header_bottom_right__item > p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #0F2438;
+    margin-top: 13px;
+    padding-right: 25px;
+    border-right: 1px solid #E1E5F8;
+}
+
+.header_bottom_right__item_text {
+    padding-top: 15px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 2px;
+}
+
+.main_box {
+    margin: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ad {
+    width: 70%;
+}
+
+.ad_right {
+    margin: 60px 15px 45px 120px;
+}
+
+.offcanvas {
+    height: 15vh;
+}
+
+.ad_button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.ad_button > img {
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.ad_card {
+    border: transparent;
+}
+
+.ad_main {
+    display: flex;
+    align-items: center;
+}
+
+.ad_right > h5 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #0A1A2C;
+}
+
+.ad_right > p {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #717171;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.ad_price > h6 {
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 43px;
+    color: #005BB9;
+}
+
+.ad_price > p {
+    padding-left: 10px;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration-line: line-through;
+    color: #C2C5DA;
+}
+
+.discount {
+    width: 30%;
+}
+
+.discount_card {
+}
+
+.discount_box {
+    border: transparent;
+    border-radius: 10px;
+    max-height: 190px;
+    background: #F4F5FA;
+}
+
+.ad_card > img {
+    height: 390px;
+}
+
+.discount_card > h4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F2438;
+    padding-top: 20px;
+}
+
+.discount_card_left_body > h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #0A1A2C;
+}
+
+.discount_card_left_body > p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #525252;
+}
+.discount_price_box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.discount_price > h6 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFB800;
+}
+
+.discount_price > p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: line-through;
+    color: #C2C5DA;
+}
+
+.discount_price {
+    column-gap: 5px;
     margin-bottom: 20px;
 }
+
+.discount_card {
+    align-items: center;
+    padding-left: 15px;
+}
+
+.cart_button {
+    padding: 8px 15px;
+    margin: 0 15px 40px;
+}
+
+

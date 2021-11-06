@@ -1,4 +1,13 @@
-.wrapper {
-    margin: 0 200px;
+@media screen and (min-width: 400px) and (max-width: 1400px) {
+    .wrapper {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        margin: 0 10px;
+    }
+
 }
 

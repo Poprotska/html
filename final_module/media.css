@@ -72,7 +72,7 @@
         width: 130px;
     }
 
-    .whatsapp_mobile  > p {
+    .whatsapp_mobile > p {
         padding: 14px 0 0 4px;
         font-weight: normal;
         font-size: 9px;
@@ -92,8 +92,6 @@
         background: #005BB9;
         height: 50px;
         border-radius: 0 6px 6px 0;
-    }
-
     }
 
     .header_bottom_left__button_2 > img {
@@ -274,6 +272,7 @@
     .news {
         margin: 70px 0 60px
     }
+
     .news_header {
         font-size: 18px;
         line-height: 19px;
@@ -297,7 +296,7 @@
     }
 
     .preview > p,
-    .preview_text{
+    .preview_text {
         padding-top: 8px;
         font-size: 12px;
         line-height: 18px;
@@ -348,5 +347,7 @@
         justify-content: start;
         margin-bottom: 20px;
     }
+
+}
 
 

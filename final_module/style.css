@@ -46,12 +46,19 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+.city_button {
+    text-decoration: underline;
+}
+
+
 .header_main {
     max-height: 120px;
 }
 
 .header_main_box {
     margin: 20px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header_main__item {
@@ -113,9 +120,13 @@
     color: #000000;
 }
 
+.whatsapp_mobile {
+    display: none;
+}
+
 .book_a_call {
     flex-direction: column;
-    text-align: right;
+    align-items: end;
 }
 
 .book_a_call > p {
@@ -201,12 +212,17 @@
     border-radius: 0 6px 6px 0;
 }
 
-.header_bottom_left__button > p {
+.header_bottom_left__button > span {
     margin: 0 10px;
+}
+
+.header_bottom_left__button_2 > img {
+    display: none;
 }
 
 .header_bottom_right {
     column-gap: 25px;
+    display: flex;
 }
 
 .header_bottom_right__item {
@@ -294,6 +310,11 @@
     color: #717171;
     padding-top: 10px;
     padding-bottom: 25px;
+}
+
+.ad_price {
+    align-items: center;
+    display: flex;
 }
 
 .ad_price > h6 {
@@ -548,6 +569,7 @@
     display: flex;
     margin-top: 40px;
     column-gap: 7px;
+    margin-bottom: -8px;
 }
 
 .catalogue_price > h6 {
@@ -619,6 +641,7 @@
     padding-top: 15px;
     border: none;
 }
+
 .preview > a {
     font-weight: normal;
     font-size: 16px;
@@ -670,7 +693,8 @@
 
 .foot__right_row {
     display: flex;
-    justify-content: space-between}
+    justify-content: space-between
+}
 
 .foot__right_col > h4 {
     font-weight: 500;

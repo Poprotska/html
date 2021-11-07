@@ -21,7 +21,7 @@
                     <img class="placeholder" src="image/placeholder_white.png" alt="placeholder_white">
                     <p>Ваш город:</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <button type="button" class="btn city_button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         Москва</button>
                 </a>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +101,7 @@
     </div>
 
     <div class="header_main wrapper">
-            <div class="header_main_box row row-cols-5 justify-content-between align-items-center">
+            <div class="header_main_box row row-cols-md-5 row-cols-2">
                 <div class="header_main__item col">
                     <img src="image/logo.png" alt="logo">
                     <div class="logo_text">
@@ -158,6 +158,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="whatsapp_mobile">
+                        <img src="image/whatsapp (2) 1.png" alt="whatsapp">
+                        <p>Напишите нам в WhatsApp</p>
+                    </div>
                 </div>
             </div>
     </div>
@@ -166,15 +170,18 @@
         <div class="header_bottom_left d-flex">
             <button type="button" class="btn btn-primary header_bottom_left__button">
                 <img src="image/catalog.png" alt="catalogue">
-                <p>Каталог</p>
+                <span>Каталог</span>
             </button>
             <div class="header_bottom_left__form input-group mb-3">
                     <input type="text" class="form-control" placeholder="Поиск по наименованию или артикулу" aria-describedby="button-addon2" aria-label="Search">
-                    <button class="btn btn-primary header_bottom_left__button_2" type="button" id="button-addon2">Найти</button>
+                    <button class="btn btn-primary header_bottom_left__button_2" type="button" id="button-addon2">
+                        <span>Найти</span>
+                        <img src="image/search%20(2)%201.png" alt="search">
+                    </button>
             </div>
         </div>
 
-        <div class="header_bottom_right d-flex align-items-center">
+        <div class="header_bottom_right align-items-center">
             <div class="header_bottom_right__item d-flex">
                 <img src="image/user%20(1)%201.png" alt="user">
                 <p>Войти</p>
@@ -211,7 +218,7 @@
                                 <div class="ad_right">
                                     <h5 class="card-title">Сцепление в сборе</h5>
                                     <p class="card-text">0AMCLUTCH</p>
-                                    <div class="ad_price d-flex align-items-center">
+                                    <div class="ad_price">
                                         <h6>14 499,99 ₽</h6>
                                         <p class="card-text">18 550,99 ₽ </p>
                                     </div>
@@ -364,7 +371,7 @@
     <div class="catalogue_top d-flex">
         <button type="button" class="btn btn-primary">Подборки товаров</button>
         <button type="button" class="btn btn-outline-primary">Акции</button>
-        <button type="button" class="btn btn-outline-primary">Сейчас покупают</button>
+        <button type="button" class="btn btn-outline-primary catalogue_button">Сейчас покупают</button>
     </div>
 
     <div class="catalogue_main">
@@ -381,7 +388,8 @@
                         <h5 class="card-title">Intermediate accumelator sleeve</h5>
                         <div class="catalogue_price_tag">
                             <p class="card-text">ЦЕНА</p>
-                            <a href="#">по запросу</a></div>
+                            <a href="#">по запросу</a>
+                        </div>
                     </div>
                     <div class="catalogue_button">
                         <button class="btn btn-primary ad_button" type="button" data-bs-toggle="offcanvas"
@@ -389,7 +397,7 @@
                             <img src="image/cart_white.png" alt="cart">В корзину
                         </button>
                         <img src="image/heart-shape-outline%202.png" alt="favorite">
-                        <img src="image/market-fluctuation%201.png" alt="market">
+                        <img class="market_icon" src="image/market-fluctuation%201.png" alt="market">
                     </div>
                 </div>
             </div>
@@ -414,7 +422,7 @@
                             <img src="image/cart_white.png" alt="cart">В корзину
                         </button>
                         <img src="image/heart-shape-outline%202.png" alt="favorite">
-                        <img src="image/market-fluctuation%201.png" alt="market">
+                        <img class="market_icon" src="image/market-fluctuation%201.png" alt="market">
                         </div>
                     </div>
                 </div>
@@ -439,7 +447,7 @@
                             <img src="image/cart_white.png" alt="cart">В корзину
                         </button>
                         <img src="image/heart-shape-outline%202.png" alt="favorite">
-                        <img src="image/market-fluctuation%201.png" alt="market">
+                        <img class="market_icon" src="image/market-fluctuation%201.png" alt="market">
                     </div>
                 </div>
             </div>
@@ -464,7 +472,7 @@
                             <img src="image/cart_white.png" alt="cart">В корзину
                         </button>
                         <img src="image/heart-shape-outline%202.png" alt="favorite">
-                        <img src="image/market-fluctuation%201.png" alt="market">
+                        <img class="market_icon" src="image/market-fluctuation%201.png" alt="market">
                     </div>
                 </div>
             </div>
@@ -488,7 +496,7 @@
                             <img src="image/cart_white.png" alt="cart">В корзину
                         </button>
                         <img src="image/heart-shape-outline%202.png" alt="favorite">
-                        <img src="image/market-fluctuation%201.png" alt="market">
+                        <img class="market_icon" src="image/market-fluctuation%201.png" alt="market">
                     </div>
                 </div>
             </div>
@@ -513,12 +521,12 @@
                                 <img src="image/cart_white.png" alt="cart">В корзину
                             </button>
                             <img src="image/heart-shape-outline%202.png" alt="favorite">
-                            <img src="image/market-fluctuation%201.png" alt="market">
+                            <img class="market_icon" src="image/market-fluctuation%201.png" alt="market">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-none d-md-block">
                 <div class="catalogue_card card h-100">
                     <img src="image/Mask%20Group.png" class="card-img-top" alt="avt-zap">
                     <div class="catalogue_header">
@@ -538,11 +546,11 @@
                             <img src="image/cart_white.png" alt="cart">В корзину
                         </button>
                         <img src="image/heart-shape-outline%202.png" alt="favorite">
-                        <img src="image/market-fluctuation%201.png" alt="market">
+                        <img class="market_icon" src="image/market-fluctuation%201.png" alt="market">
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-none d-md-block">
                 <div class="catalogue_card card h-100">
                     <img src="image/Mask%20Group%20(2).png" class="card-img-top" alt="avt-zap">
                     <div class="catalogue_header">
@@ -563,7 +571,7 @@
                             <img src="image/cart_white.png" alt="cart">В корзину
                         </button>
                         <img src="image/heart-shape-outline%202.png" alt="favorite">
-                        <img src="image/market-fluctuation%201.png" alt="market">
+                        <img class="market_icon" src="image/market-fluctuation%201.png" alt="market">
                     </div>
                 </div>
             </div>
